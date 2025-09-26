@@ -24,25 +24,24 @@ No requiere librerías externas: solo módulos estándar de Python (sys, heapq).
 
 Cada línea define una conexión (arista) entre dos nodos con su costo (tiempo en minutos):
 
-<ORIGEN> <DESTINO> <COSTO>
-
+# <ORIGEN> <DESTINO> <COSTO>
 
 Ejemplo:
 
-A B 4
-A C 2
-B D 5
-C D 1
-D E 3
+- A B 4
+- A C 2
+- B D 5
+- C D 1
+- D E 3
 
 
-Nombres de nodos: pueden ser letras, números o etiquetas (ej: Est1, ParadaCentral).
+#### Nombres de nodos: pueden ser letras, números o etiquetas (ej: Est1, ParadaCentral).
 
-Costo: número positivo (enteros o decimales).
+#### Costo: número positivo (enteros o decimales).
 
 El grafo es bidireccional (la conexión sirve en ambos sentidos).
 
-4. Ejecución del programa
+- #### 4. Ejecución del programa
 Opción 1: Uso con argumentos (modo actual)
 
 En la consola, ubícate en la carpeta del proyecto y ejecuta:
@@ -53,7 +52,6 @@ python main.py <inicio> <fin>
 Ejemplo:
 
 python main.py A E
-
 
 Salida esperada:
 
@@ -85,7 +83,7 @@ python main.py
 Ingrese la parada inicial: A
 Ingrese la parada meta: E
 
-5. Heurística
+- #### 5. Heurística
 
 El programa incluye un diccionario con valores heurísticos simulados:
 
@@ -96,7 +94,7 @@ Regla clave: el nodo destino debe tener heurística 0.
 
 Si agregas nodos nuevos, actualiza la heurística manualmente o implementa coordenadas y cálculo automático.
 
-6. Errores comunes
+- #### 6. Errores comunes
 
 Archivo no encontrado → Asegúrate de que kb.txt esté en la misma carpeta.
 
@@ -108,7 +106,7 @@ Costo negativo → Se ignoran aristas con valores negativos.
 
 Mensaje “Uso: python main.py <inicio> <fin>” → Olvidaste pasar los dos argumentos.
 
-7. Pruebas recomendadas
+- #### 7. Pruebas recomendadas
 
 Ruta existente: python main.py A E → Debe mostrar camino y costo.
 
@@ -118,7 +116,7 @@ Nodo inexistente: python main.py Z A → Mensaje de error.
 
 Grafo desconectado: Usa nodos sin conexión → “No se encontró ruta”.
 
-8. Subir a GitHub
+- #### 8. Subir a GitHub
 git init
 git add main.py kb.txt README.md
 git commit -m "Proyecto inicial: sistema de rutas A*"
@@ -129,7 +127,7 @@ git push -u origin main
 
 Luego, en Settings → Collaborators, agrega al tutor como colaborador.
 
-9. Conclusión
+- #### 9. Conclusión
 
 Este proyecto cumple con:
 
