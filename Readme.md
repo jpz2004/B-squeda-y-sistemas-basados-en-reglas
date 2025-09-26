@@ -13,7 +13,7 @@ Pruebas del sistema: se ejecutaron diferentes consultas ej. de la estación A a 
 ### Base de conocimiento (kb.txt)
 
 Imaginemos que tu ciudad tiene estas estaciones:
-•	A = Terminal Norte
+- •	A = Terminal Norte
 •	B = Estación Central
 •	C = Universidad
 •	D = Plaza Mayor
