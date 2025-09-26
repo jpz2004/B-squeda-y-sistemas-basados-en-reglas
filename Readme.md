@@ -13,11 +13,11 @@ Pruebas del sistema: se ejecutaron diferentes consultas ej. de la estación A a 
 ### Base de conocimiento (kb.txt)
 
 Imaginemos que tu ciudad tiene estas estaciones:
-- •	A = Terminal Norte
-•	B = Estación Central
-•	C = Universidad
-•	D = Plaza Mayor
-•	E = Terminal Sur
+-	A = Terminal Norte
+-	B = Estación Central
+-	C = Universidad
+-	D = Plaza Mayor
+-	E = Terminal Sur
 
 Conexiones nodo origen, nodo destino, tiempo en minutos:
 A B 5
