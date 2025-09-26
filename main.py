@@ -2,9 +2,9 @@
 import sys
 import heapq
 
-# ===============================
-# Cargar la base de conocimiento
-# ===============================
+
+# Base de conocimiento
+
 def cargar_grafo(archivo):
     grafo = {}
     try:
@@ -23,7 +23,7 @@ def cargar_grafo(archivo):
                         continue
 
                     grafo.setdefault(origen, []).append((destino, costo))
-                    grafo.setdefault(destino, []).append((origen, costo))  # Grafo bidireccional
+                    grafo.setdefault(destino, []).append((origen, costo))  
                 except ValueError:
                     print(f"Error de valor al convertir costo en línea {i}. Asegúrese de que el costo es numérico.")
                     continue
@@ -32,37 +32,36 @@ def cargar_grafo(archivo):
         sys.exit(1)
     return grafo
 
-# ===============================
 # Algoritmo A* (búsqueda heurística)
-# ===============================
+
 def a_star(grafo, inicio, fin, heuristica):
-    # (f=g+h, g, contador_desempate, nodo, camino)
+    
     contador = 0 
     cola = [(heuristica.get(inicio, 0), 0, contador, inicio, [inicio])] 
     visitados = set()
 
     while cola:
-        f, g, _, nodo, camino = heapq.heappop(cola) # Descartamos el contador
+        f, g, _, nodo, camino = heapq.heappop(cola) 
 
         if nodo in visitados:
             continue
         visitados.add(nodo)
 
         if nodo == fin:
-            return camino, g  # Ruta encontrada y costo total
+            return camino, g  
 
         for vecino, costo in grafo.get(nodo, []):
             if vecino not in visitados:
                 nuevo_g = g + costo
-                nuevo_f = nuevo_g + heuristica.get(vecino, 0) # Usa get para evitar KeyError
+                nuevo_f = nuevo_g + heuristica.get(vecino, 0) 
                 contador += 1
                 heapq.heappush(cola, (nuevo_f, nuevo_g, contador, vecino, camino + [vecino]))
 
     return None, float("inf")
 
-# ===============================
+
 # Programa principal
-# ===============================
+
 if __name__ == "__main__":
     if len(sys.argv) != 3:
         print("Uso: python main.py <inicio> <fin>")
@@ -71,13 +70,12 @@ if __name__ == "__main__":
     inicio, fin = sys.argv[1], sys.argv[2]
     grafo = cargar_grafo("kb.txt")
 
-    # Heurística estimada (simulada)
-    # Se recomienda que h(nodo_final) = 0
+    
     heuristica = {
         "A": 14, "B": 10, "C": 6, "D": 4, "E": 0
     }
     
-    # Validaciones de Nodos
+    
     if inicio not in grafo:
         print(f"Error: El nodo de inicio '{inicio}' no existe en el grafo.")
         sys.exit(1)
