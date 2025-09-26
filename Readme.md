@@ -1,3 +1,9 @@
+# Integrantes grupo
+
+- Juan Pablo Zapata Jaramillo
+-
+- 
+
 # Introduccion
 
 En este proyecto se desarrolló un sistema inteligente en Python capaz de encontrar la mejor ruta entre dos estaciones del sistema de transporte masivo local. El sistema utiliza una base de conocimiento escrita en reglas lógicas y un algoritmo de búsqueda heurística (A*) para calcular la ruta óptima.
@@ -28,6 +34,21 @@ Conexiones nodo origen, nodo destino, tiempo en minutos:
 - A C 12
 - C E 10
 
-# Integrantes grupo
+### Resultados y pruebas
+Ejemplo de ejecución en la terminal:
 
-Juan Pablo Zapata Jaramillo
+- > python main.py A E
+Ruta encontrada: A -> B -> D -> E
+Costo total: 15.0 minutos
+
+- > python main.py B C
+Ruta encontrada: B -> C
+Costo total: 7.0 minutos
+
+## Concluciones 
+
+El sistema demuestra cómo un conjunto de reglas y técnicas de búsqueda heurística pueden aplicarse para resolver problemas reales de transporte.
+El algoritmo A* permite encontrar rutas más eficientes que con métodos de búsqueda ciega.
+La implementación puede ampliarse con más nodos, diferentes heurísticas y criterios como costo económico o nivel de tráfico.
+
+
