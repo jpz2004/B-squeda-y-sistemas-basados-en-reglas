@@ -45,6 +45,8 @@ Costo total: 15.0 minutos
 Ruta encontrada: B -> C
 Costo total: 7.0 minutos
 
+- > python main.py <inicio> <fin>
+
 ## Concluciones 
 
 El sistema demuestra cómo un conjunto de reglas y técnicas de búsqueda heurística pueden aplicarse para resolver problemas reales de transporte.
