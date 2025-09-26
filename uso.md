@@ -12,7 +12,7 @@ Consola / terminal (cmd, PowerShell, Terminal macOS/Linux)
 
 No requiere librerías externas: solo módulos estándar de Python (sys, heapq).
 
-- #### 2. Archivos del proyecto
+- ## 2. Archivos del proyecto
 
 - > main.py → Código principal con el algoritmo A*.
 
@@ -20,7 +20,7 @@ No requiere librerías externas: solo módulos estándar de Python (sys, heapq).
 
 - > README.md / USO.md → Documentación del proyecto.
 
-- #### 3. Formato de la base de conocimiento (kb.txt)
+- ## 3. Formato de la base de conocimiento (kb.txt)
 
 Cada línea define una conexión (arista) entre dos nodos con su costo (tiempo en minutos):
 
@@ -41,7 +41,7 @@ Ejemplo:
 
 El grafo es bidireccional (la conexión sirve en ambos sentidos).
 
-- #### 4. Ejecución del programa
+- ## 4. Ejecución del programa
 Opción 1: Uso con argumentos (modo actual)
 
 En la consola, ubícate en la carpeta del proyecto y ejecuta:
@@ -83,7 +83,7 @@ python main.py
 Ingrese la parada inicial: A
 Ingrese la parada meta: E
 
-- #### 5. Heurística
+- ## 5. Heurística
 
 El programa incluye un diccionario con valores heurísticos simulados:
 
@@ -94,7 +94,7 @@ Regla clave: el nodo destino debe tener heurística 0.
 
 Si agregas nodos nuevos, actualiza la heurística manualmente o implementa coordenadas y cálculo automático.
 
-- #### 6. Errores comunes
+- ## 6. Errores comunes
 
 Archivo no encontrado → Asegúrate de que kb.txt esté en la misma carpeta.
 
@@ -106,7 +106,7 @@ Costo negativo → Se ignoran aristas con valores negativos.
 
 Mensaje “Uso: python main.py <inicio> <fin>” → Olvidaste pasar los dos argumentos.
 
-- #### 7. Pruebas recomendadas
+- ## 7. Pruebas recomendadas
 
 Ruta existente: python main.py A E → Debe mostrar camino y costo.
 
@@ -116,18 +116,7 @@ Nodo inexistente: python main.py Z A → Mensaje de error.
 
 Grafo desconectado: Usa nodos sin conexión → “No se encontró ruta”.
 
-- #### 8. Subir a GitHub
-git init
-git add main.py kb.txt README.md
-git commit -m "Proyecto inicial: sistema de rutas A*"
-git branch -M main
-git remote add origin https://github.com/TU_USUARIO/sistema_rutas.git
-git push -u origin main
-
-
-Luego, en Settings → Collaborators, agrega al tutor como colaborador.
-
-- #### 9. Conclusión
+- ## 8. Conclusión
 
 Este proyecto cumple con:
 
