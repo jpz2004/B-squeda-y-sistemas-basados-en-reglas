@@ -20,11 +20,14 @@ Imaginemos que tu ciudad tiene estas estaciones:
 -	E = Terminal Sur
 
 Conexiones nodo origen, nodo destino, tiempo en minutos:
-A B 5
-B C 7
-B D 4
-C D 3
-D E 6
-A C 12
-C E 10
+- A B 5
+- B C 7
+- B D 4
+- C D 3
+- D E 6
+- A C 12
+- C E 10
 
+# Integrantes grupo
+
+Juan Pablo Zapata Jaramillo
