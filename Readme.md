@@ -26,13 +26,12 @@ Imaginemos que tu ciudad tiene estas estaciones:
 -	E = Terminal Sur
 
 Conexiones nodo origen, nodo destino, tiempo en minutos:
-- A B 5
-- B C 7
-- B D 4
-- C D 3
-- D E 6
-- A C 12
+- A B 4
+- A C 2
+- B D 5
+- C D 8
 - C E 10
+- D E 3
 
 ### Resultados y pruebas
 Ejemplo de ejecución en la terminal:
