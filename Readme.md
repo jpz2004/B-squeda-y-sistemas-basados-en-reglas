@@ -1,7 +1,7 @@
 # Integrantes grupo
 
 - Juan Pablo Zapata Jaramillo
--
+- Hernan Ricardo Loaiza Doncel
 - 
 
 # Introduccion
