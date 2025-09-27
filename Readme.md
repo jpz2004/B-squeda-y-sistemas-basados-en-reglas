@@ -37,12 +37,12 @@ Conexiones nodo origen, nodo destino, tiempo en minutos:
 Ejemplo de ejecución en la terminal:
 
 - > python main.py A E
-Ruta encontrada: A -> B -> D -> E
-Costo total: 15.0 minutos
+Ruta encontrada: A -> C -> E
+Costo total: 12.0 minutos
 
 - > python main.py B C
-Ruta encontrada: B -> C
-Costo total: 7.0 minutos
+Ruta encontrada: B -> A -> C
+Costo total: 6.0 minutos
 
 - > python main.py <inicio> <fin>
 
