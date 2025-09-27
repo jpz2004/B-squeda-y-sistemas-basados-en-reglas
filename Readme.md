@@ -2,7 +2,7 @@
 
 - Juan Pablo Zapata Jaramillo
 - Hernan Ricardo Loaiza Doncel
-- 
+- Neder Antonio Hernández Reyes 
 
 # Introduccion
 
