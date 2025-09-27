@@ -58,8 +58,8 @@ Salida esperada:
 Buscando ruta de A a E...
 
 --- Resultado ---
-Ruta encontrada: A -> C -> D -> E
-Costo total: 6.0 minutos
+Ruta encontrada: A -> C -> E
+Costo total: 12.0 minutos
 
 
 Si olvidas los argumentos, verás:
